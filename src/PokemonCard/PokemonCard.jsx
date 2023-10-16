@@ -8,7 +8,7 @@ function PokemonCard(props){
 
     // const pokemon = pokemonList[0];
 
-    // if (pokemon.name && pokemon.imgSrc != null)
+    // if (pokemon.name && pokemon.imgSrc != null && )
     
     // {
 
