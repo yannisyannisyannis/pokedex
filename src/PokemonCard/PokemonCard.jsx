@@ -1,33 +1,22 @@
 
-function PokemonCard(props){
 
-
-
-    return <>{props.pokemon.name} <img src={props.pokemon.imgSrc}/> </> 
+function PokemonCard(props) {
+  return (
+  
+    <figure className="card">
+        {props.pokemon.imgSrc != null ? (
+          <img
+            className="card-img"
+            src={props.pokemon.imgSrc}
+            alt={props.pokemon.name}
+          />
+        ) : (
+          <p> ??? </p>
+        )}
+      <figcaption>{props.pokemon.name}</figcaption>
+    </figure>
+  
+  )
 }
 
-    // const pokemon = pokemonList[0];
-
-    // if (pokemon.name && pokemon.imgSrc != null && )
-    
-    // {
-
-    // return  ( <> 
-    // <p> {pokemon.name}</p>
-    // <img src= {pokemon.imgSrc}/>
-    // </>
-    // );
-    // }
-    //  return(
-    // <>
-
-    // <p>???</p>
-    
-    //  </> 
-     
-    //  );
-
-    //  }
-
-
-export default PokemonCard
+export default PokemonCard;
