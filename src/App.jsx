@@ -1,12 +1,19 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import PokemonCard from "./PokemonCard/PokemonCard";
 import NavBar from "./componnent/NavBar"
 
 function App() {
   const [pokemonIndex, setpokemonIndex] = useState(0);
+
+  useEffect ( 
+    ()=> { 
+     alert("hello pokemon trainer")
+    }, 
+    []
+  );
 
   const handleNext = () => {
     if (pokemonIndex < pokemonList.length - 1)
@@ -40,7 +47,7 @@ function App() {
     },
     {
       name: "mew",
-      imgSrx: "https://www.pokemon.com/fr/pokedex/mew",
+      imgSrc: "https://www.pokemon.com/fr/pokedex/mew",
     },
   ];
 
